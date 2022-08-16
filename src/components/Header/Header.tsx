@@ -1,8 +1,8 @@
-import React from "react";
+import styles from './Header.module.css';
 
-export const Header = (): JSX.Element =>{
+export const Header = (): JSX.Element => {
     return (
-        <header>
+        <header className={styles.header}>
             I'm header
         </header>
     )

@@ -2,7 +2,7 @@
 /node_modules
 
 # builds
-/public
+/dist
 
 # logs
 npm-debug.log*
