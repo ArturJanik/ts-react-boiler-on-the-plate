@@ -8,7 +8,7 @@ Simple typescript boilerplate React app, without cra bloat.
 
 ## Scripts
 
-To build dev app:
+To build app:
 > npm run build
 
 To run dev app with webpack dev server:
