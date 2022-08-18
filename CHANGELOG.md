@@ -5,6 +5,12 @@
 * slimming down dependency tree (using pure React instead of create-react-app)
 * replacing dependencies that are no longer maintained (like leaflet-almostover) with native solutions
 
+## 1.2.0 - 18.08.2022
+
+### Added
+
+* sass (scss) styles handling
+
 ## 1.1.0 - 16.08.2022
 
 ### Added

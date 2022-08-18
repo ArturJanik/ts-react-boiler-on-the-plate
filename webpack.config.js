@@ -47,8 +47,9 @@ module.exports = (env) => ({
                             modules: 'global',
                             sourceMap: false,
                         },
-                    }
-                ]
+                    },
+                    "sass-loader",
+                ],
             },
             {
                 test: /\.module\.(sc|c)ss$/,
@@ -65,10 +66,11 @@ module.exports = (env) => ({
                             },
                             sourceMap: false,
                         },
-                    }
-                ]
-            }
-        ]
+                    },
+                    "sass-loader",
+                ],
+            },
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
