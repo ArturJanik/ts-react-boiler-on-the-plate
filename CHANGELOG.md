@@ -5,6 +5,12 @@
 * slimming down dependency tree (using pure React instead of create-react-app)
 * replacing dependencies that are no longer maintained (like leaflet-almostover) with native solutions
 
+## 1.4.0 - 18.08.2022
+
+### Added
+
+* font import handling
+
 ## 1.3.0 - 18.08.2022
 
 ### Added
