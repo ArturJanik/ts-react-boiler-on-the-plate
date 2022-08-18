@@ -5,6 +5,16 @@
 * slimming down dependency tree (using pure React instead of create-react-app)
 * replacing dependencies that are no longer maintained (like leaflet-almostover) with native solutions
 
+## 1.4.1 - 18.08.2022
+
+### Added
+
+* bundle size analyzer
+
+### Changed
+
+* webpack env handling
+
 ## 1.4.0 - 18.08.2022
 
 ### Added
