@@ -1,15 +1,24 @@
-## Roadmap
+## 1.5.0 - 19.08.2022
 
-* ~~replacing axios with Fetch API~~
-* complete rewrite of app to React 18 and Typescript
-* slimming down dependency tree (using pure React instead of create-react-app)
-* replacing dependencies that are no longer maintained (like leaflet-almostover) with native solutions
+### Added
+
+* set webpack splitting code into chunks
+* routing with lazy loaded chunk
+* simple spinner for Suspense 
+
+* added __react-router-dom__ `6.3.0`
+
+### Changed
+
+* fix routes failing on refresh
 
 ## 1.4.1 - 18.08.2022
 
 ### Added
 
 * bundle size analyzer
+
+* added __webpack-bundle-analyzer__ `4.5.0`
 
 ### Changed
 
@@ -32,6 +41,9 @@
 ### Added
 
 * sass (scss) styles handling
+
+* added __sass__ `1.54.4`
+* added __sass-loader__ `13.0.2`
 
 ## 1.1.0 - 16.08.2022
 

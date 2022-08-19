@@ -1,9 +1,11 @@
+import { Menu } from './Menu/Menu';
 import styles from './Header.module.css';
 
 export const Header = (): JSX.Element => {
     return (
         <header className={styles.header}>
-            I'm header
+            <div>I'm header</div>
+            <Menu />
         </header>
     )
 };

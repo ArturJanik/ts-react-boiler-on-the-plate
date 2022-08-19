@@ -5,7 +5,7 @@
         "allowJs": true,
         "moduleResolution": "node",
         "jsx": "react-jsx",
-        "module": "ES2015",
+        "module": "es2020",
         "removeComments": true,
         "plugins": [{ "name": "typescript-plugin-css-modules" }],
     },

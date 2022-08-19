@@ -11,7 +11,8 @@ module.exports = {
     entry: './src/index.js', 
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js'
+        filename: '[name].[fullhash].js',
+        chunkFilename: '[id].[chunkhash].js',
     },
     target: 'web',
     devServer: {
@@ -19,7 +20,13 @@ module.exports = {
         static: ['./dist'],
         open: true,
         hot: true,
-        liveReload: true
+        liveReload: true,
+        historyApiFallback: true,
+    },
+    performance: {
+        hints: false,
+        maxEntrypointSize: isDevelopment() ? 512000 : 10000,
+        maxAssetSize: isDevelopment() ? 512000 : 10000,
     },
     resolve: {
         extensions: ['.js','.jsx','.ts','.tsx'] 
@@ -90,5 +97,8 @@ module.exports = {
             template: './public/index.html',
         }),
         isProduction() ? new CleanWebpackPlugin() : false,
-    ].filter(Boolean)
+    ].filter(Boolean),
+    optimization: {
+        splitChunks: { chunks: "all" }
+    },
 }
